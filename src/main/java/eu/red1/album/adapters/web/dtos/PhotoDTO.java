@@ -1,7 +1,9 @@
-package eu.red1.album.controllers;
+package eu.red1.album.adapters.web.dtos;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
+import lombok.Getter;
 
 /**
  * PhotoDTO
@@ -19,11 +21,9 @@ public class PhotoDTO {
 
   private Long albumId;
 
+  @Getter
+  @JsonBackReference
   private AlbumDTO album;
-
-  public AlbumDTO getAlbum() {
-    return album;
-  }
 
   public void setAlbum(AlbumDTO album) {
     this.album = album;

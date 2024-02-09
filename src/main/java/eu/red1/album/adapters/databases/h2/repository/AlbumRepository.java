@@ -1,10 +1,10 @@
-package eu.red1.album.persistence.repository;
+package eu.red1.album.adapters.databases.h2.repository;
 
-import eu.red1.album.persistence.data.AlbumEntity;
+import eu.red1.album.adapters.databases.h2.data.AlbumEntity;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- * Persistence adapter: Stores products in postgres.
+ * Persistence adapter: Stores Albums in H2.
  *
  * @author Redouane Mehdi
  */

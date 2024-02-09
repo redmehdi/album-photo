@@ -1,4 +1,4 @@
-package eu.red1.album.persistence.data;
+package eu.red1.album.adapters.databases.h2.data;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

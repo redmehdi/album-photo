@@ -1,5 +1,6 @@
-package eu.red1.album.controllers;
+package eu.red1.album.adapters.web.dtos;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,7 @@ public class AlbumDTO {
 
   private String title;
 
+  @JsonManagedReference
   private List<PhotoDTO> photos = new ArrayList<>();
   public AlbumDTO userId(Long userId) {
     this.userId = userId;

@@ -1,7 +1,8 @@
-package eu.red1.album.persistence.restclient;
+package eu.red1.album.adapters.api;
 
-import eu.red1.album.controllers.AlbumDTO;
-import eu.red1.album.controllers.PhotoDTO;
+import eu.red1.album.adapters.AlbumApiClientPort;
+import eu.red1.album.adapters.web.dtos.AlbumDTO;
+import eu.red1.album.adapters.web.dtos.PhotoDTO;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -38,4 +39,3 @@ public class ApiClient {
     return Arrays.asList(Objects.requireNonNull(response.getBody()));
   }
 }
-
