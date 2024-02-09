@@ -7,7 +7,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import eu.red1.album.adapters.AlbumApiClientPort;
 import eu.red1.album.adapters.AlbumRepositoryPort;
-import eu.red1.album.core.GetAllAlbumUseCase;
 import eu.red1.album.core.model.Album;
 import eu.red1.album.core.service.AlbumService;
 import java.util.ArrayList;

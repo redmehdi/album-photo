@@ -1,0 +1,38 @@
+album-enrichment-service/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── eu/
+│   │   │   │   ├── red1/
+│   │   │   │   │   ├── album/
+│   │   │   │   │   │   ├── adapters/
+│   │   │   │   │   │   │   ├── AlbumDtoMapper.java
+│   │   │   │   │   │   │   ├── AlbumRepositoryPort.java
+│   │   │   │   │   │   │   ├── AlbumService.java
+│   │   │   │   │   │   │   ├── AlbumApiClientPort.java
+│   │   │   │   │   │   │   └── web/
+│   │   │   │   │   │   │       ├── controllers/
+│   │   │   │   │   │   │       │   ├── AlbumController.java
+│   │   │   │   │   │   │       └── dtos/
+│   │   │   │   │   │   │           ├── AlbumDTO.java
+│   │   │   │   │   │   │           └── PhotoDTO.java
+│   │   │   │   │   │   └── core/
+│   │   │   │   │   │       ├── service/
+│   │   │   │   │   │       │   └── AlbumService.java
+│   │   │   │   │   │       └── model/
+│   │   │   │   │   │           ├── Album.java
+│   │   │   │   │   │           └── Photo.java
+│   │   ├── resources/
+│   │   │   └── application.properties
+│   ├── test/
+│   │   ├── java/
+│   │   │   └── eu/
+│   │   │       └── red1/
+│   │   │           └── album/
+│   │   │               ├── adapters/
+│   │   │               │   ├── AlbumServiceTest.java
+│   │   │               └── web/
+│   │   │                   └── controllers/
+│   │   │                       └── AlbumControllerTest.java
+└── pom.xml
