@@ -8,7 +8,9 @@ import eu.red1.album.core.GetAllAlbumUseCase;
 import eu.red1.album.core.model.Album;
 import eu.red1.album.core.model.Photo;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -65,6 +67,9 @@ public class AlbumService implements EnriquecerYAlmacenarUseCase, EnriquecerSinA
   public List<Album> enrichSinAlbums() {
     List<Album> albums = apiClient.getAlbums();
     List<Photo> photos = apiClient.getPhotos();
+    if (albums == null || albums.isEmpty()) {
+      return new ArrayList<>();
+    }
 
     return AlbumHelper.aggregatePhotoToAlbum(albums, photos);
   }
