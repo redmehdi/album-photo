@@ -50,7 +50,7 @@ To use this microservice, run it as a Spring Boot application. Endpoints can be 
 4. Access the endpoints using the provided URLs.
 
 ## Contributors:
-- Redouane Mehdi
+- Redouane Mehdi (https://www.linkedin.com/in/redouane-mehdi-240818109/)
 
 ## License:
 This project is licensed under the [MIT License](LICENSE).
