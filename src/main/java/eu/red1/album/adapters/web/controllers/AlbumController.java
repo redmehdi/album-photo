@@ -5,7 +5,6 @@ import eu.red1.album.adapters.web.dtos.AlbumDTO;
 import eu.red1.album.core.EnriquecerSinAlmacenarUseCase;
 import eu.red1.album.core.EnriquecerYAlmacenarUseCase;
 import eu.red1.album.core.GetAllAlbumUseCase;
-import eu.red1.album.core.service.AlbumService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.util.Streamable;
@@ -33,6 +32,7 @@ public class AlbumController {
   public ResponseEntity<List<AlbumDTO>> getAlbums() {
     List<AlbumDTO> albumDTOS = Streamable.of(getAllAlbumUseCase.getAlbums())
         .map(AlbumDtoMapper::mapToAlbumDTO).toList();
+
     return ResponseEntity.ok(albumDTOS);
   }
 
